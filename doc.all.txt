@@ -1,0 +1,68 @@
+== Test ==
+<img name=2>
+<input name=02>
+...<script>
+w(document.all[2])
+w(document.all["2"])
+w(document.all["02"])
+w(document.all(2))
+w(document.all("2"))
+w(document.all("02"))
+w(document.all.item(2))
+w(document.all.item("2"))
+w(document.all.item("02"))
+w(document.all.namedItem(2))
+w(document.all.namedItem("2"))
+w(document.all.namedItem("02"))
+</script>
+
+== Gecko ==
+body
+body
+input
+
+body
+body
+input
+
+body
+body
+input
+
+body
+body
+input
+
+== Chrome ==
+body
+body
+input
+
+body
+body
+input
+
+body
+body
+input
+
+img
+img
+input
+
+== IE ==
+body
+body
+body
+
+body
+body
+body
+
+body
+img
+input
+
+img
+img
+input

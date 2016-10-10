@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+...<script>
+var arr = [];
+//Object.defineProperty(arr, "length", { get: function() { throw 7 } });
+Object.defineProperty(Array.prototype, "length", { get: function() { throw 7 } });
+w(new Blob())
+</script>
